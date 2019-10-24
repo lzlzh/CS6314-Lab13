@@ -10,11 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-/**
- * 
- * @author w2150
- *
- */
 public class RpcHelper {
 	//Write a JSONArray to http response
 	/**

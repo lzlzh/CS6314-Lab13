@@ -18,16 +18,11 @@ import org.json.JSONObject;
 import entity.Item;
 import entity.Item.ItemBuilder;
 
-/**
- * 
- * @author w2150
- *
- */
 public class TicketMasterAPI {
 	
 	private static final String URL = "https://app.ticketmaster.com/discovery/v2/events.json";
 	private static final String DEFAULT_KEYWORD = "";
-	private static final String API_KEY= "GDlN27hsHVsKGA2909joKiAARuCVdJ9u";
+	private static final String API_KEY= "6eEyXWhdDaeNVAjo1OsMCH0baMLnuOQP";
 	
 	/**
 	 * 

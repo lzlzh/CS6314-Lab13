@@ -94,6 +94,8 @@ public class Item {
 	public double getDistance() {
 		return distance;
 	}
+	
+	// To convert an Item object a JSONObject instance because frontend code cannot understand Java class, it can only understand JSON.
 	public JSONObject toJSONObject() {
 		JSONObject obj = new JSONObject();
 		try {
