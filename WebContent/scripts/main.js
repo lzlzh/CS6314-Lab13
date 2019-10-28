@@ -418,6 +418,7 @@
       var items = JSON.parse(res);
       if (!items || items.length === 0) {
         showWarningMessage('No favorite item.');
+        location.reload();	// a temp walkaround for a bug that prevent the favorite items to be loaded in "My Favorites"  
       } else {
         listItems(items);
       }
