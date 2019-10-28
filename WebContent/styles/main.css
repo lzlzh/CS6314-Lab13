@@ -195,6 +195,8 @@ ul {
 .main-section {
 	/*background: #F3BB43;*/
 	background: #ffb24a;
+	min-height: 370px;
+	
 }
 
 /**
@@ -202,7 +204,7 @@ ul {
  */
 #item-nav {
 	float: left;
-	width: 180px;
+	width: 190px;
 	position: sticky;
 	position: -webkit-sticky;
     top: 0;
@@ -238,6 +240,7 @@ ul {
 .main-nav-btn {
 	background: none;
 	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
 	color: #FFFFFF;
 	display: block;
 	padding: 20px;
@@ -266,7 +269,7 @@ ul {
 	background: #F2EBD9;
 	color: #624630;
 	list-style: none;
-	margin-left: 180px;
+	margin-left: 190px;
 	min-height: 250px;
 	padding: 10px;
 }
@@ -387,9 +390,23 @@ a.main-nav-btn:hover {
     position: relative
 }
 
+.main-nav-btn.active span{
+	border: #c0c0c0 2px dotted;
+    padding: 5px 20px 5px 5px;
+    display: block;
+    z-index: 100;
+    left: 0px;
+    margin: 0px;
+    width: 138px;
+    position: relative;
+    top: 10px;
+    text-decoration: none
+}
+
 a.main-nav-btn span {
     display: none
 }
+
 a.main-nav-btn:hover span {
     border: #c0c0c0 2px dotted;
     padding: 5px 20px 5px 5px;
