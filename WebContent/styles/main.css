@@ -203,6 +203,9 @@ ul {
 #item-nav {
 	float: left;
 	width: 180px;
+	position: sticky;
+	position: -webkit-sticky;
+    top: 0;
 }
 
 .nav-icon {
@@ -214,6 +217,24 @@ ul {
 /**
 //////////////////////// main navigation ////////////////////////
  */
+/* 
+.main-nav{
+	 position: -webkit-sticky;
+	 position: sticky;
+	 top: 0;
+}
+*/ 
+
+/*  
+.nav-icon {
+    top: 50;
+    position: sticky;
+    position: -webkit-sticky;
+}
+*/
+
+/* Both wrong. Just set position: sticky; in #item-nav */
+ 
 .main-nav-btn {
 	background: none;
 	border-top: 1px solid #FFFFFF;
