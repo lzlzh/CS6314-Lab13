@@ -214,6 +214,7 @@ ul {
 	color: #624630;
 	padding: 20px;
 	text-align: center;
+	border-bottom: 1px solid #FFFFFF;
 }
 
 /**
@@ -239,7 +240,7 @@ ul {
  
 .main-nav-btn {
 	background: none;
-	border-top: 1px solid #FFFFFF;
+	/*border-top: 1px solid #FFFFFF;*/
 	border-bottom: 1px solid #FFFFFF;
 	color: #FFFFFF;
 	display: block;

@@ -417,7 +417,7 @@
     ajax('GET', url + '?' + params, req, function(res) {
       var items = JSON.parse(res);
       if (!items || items.length === 0) {
-        showWarningMessage('No favorite item.');
+        showWarningMessage('No favorite item. Please click on the hearts to save your interested events');
         location.reload();	// a temp walkaround for a bug that prevent the favorite items to be loaded in "My Favorites"  
       } else {
         listItems(items);
@@ -439,7 +439,7 @@
     var data = null;
 
     // display loading message
-    showLoadingMessage('Loading recommended items...');
+    showLoadingMessage('Generating personal recommendations just for you...');
 
     // make AJAX call
     ajax('GET', url, data,
