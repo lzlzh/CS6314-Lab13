@@ -21,6 +21,7 @@
     document.querySelector('#fav-btn').addEventListener('click', loadFavoriteItems);
     document.querySelector('#recommend-btn').addEventListener('click', loadRecommendedItems);
     document.querySelector('#how-btn').addEventListener('click', showHowItWorks);
+    document.querySelector('#about-btn').addEventListener('click', showHowItWorks);
     document.querySelector('#more-btn').addEventListener('click', showMore);
     validateSession();
     // onSessionValid({"user_id":"1111","name":"John Smith","status":"OK"});
