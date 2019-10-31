@@ -271,7 +271,7 @@ ul {
 	color: #624630;
 	list-style: none;
 	margin-left: 190px;
-	min-height: 250px;
+	min-height: 650px;
 	padding: 10px;
 }
 
@@ -420,4 +420,23 @@ a.main-nav-btn:hover span {
     position: relative;
     top: 10px;
     text-decoration: none
+}
+
+
+/*
+//////////////////////// how it works //////////////////////// 
+*/
+
+#howImage {
+	width: 790px;
+}
+
+/*
+//////////////////////// more from me //////////////////////// 
+*/
+
+.moreLi {
+	text-align: center;
+	font-size: 115%;
+	margin-top: 120px;
 }

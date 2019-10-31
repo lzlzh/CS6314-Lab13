@@ -20,6 +20,8 @@
     document.querySelector('#nearby-btn').addEventListener('click', loadNearbyItems);
     document.querySelector('#fav-btn').addEventListener('click', loadFavoriteItems);
     document.querySelector('#recommend-btn').addEventListener('click', loadRecommendedItems);
+    document.querySelector('#how-btn').addEventListener('click', showHowItWorks);
+    document.querySelector('#more-btn').addEventListener('click', showMore);
     validateSession();
     // onSessionValid({"user_id":"1111","name":"John Smith","status":"OK"});
   }
@@ -491,7 +493,95 @@
         }
       });
   }
+  
 
+  /**
+   * API #5 show "How It Works"
+   */
+
+  function showHowItWorks() {
+	    activeBtn('how-btn');
+
+	    // no request parameters
+
+	    // no need to display loading message
+
+	    var itemList = document.querySelector('#item-list');
+	    itemList.innerHTML = ''; // clear current results
+	    
+	    // create the <li> tag and specify the id and class attributes
+	    var li = $create('li', {
+	      id: 'howLi',
+	      className: 'howLi'
+	    });
+	    
+	    itemList.appendChild(li);
+	    
+	    var div = $create('div', {
+	      id: 'howDiv'
+      });
+	    
+      li.appendChild(div);
+      
+	    div.appendChild($create('img', {
+	        src: 'https://github.com/lzlzh/files/blob/master/howItWorks.jpg?raw=true',
+	        id: 'howImage'
+	      }));
+	  }
+  
+  
+  /**
+   * API #6 show "More From Me"
+   */
+
+  function showMore() {
+	    activeBtn('more-btn');
+
+	    // no request parameters
+
+	    // no need to display loading message
+
+	    var itemList = document.querySelector('#item-list');
+	    itemList.innerHTML = ''; // clear current results
+	    
+	    // create the <li> tag and specify the id and class attributes
+	    var li = $create('li', {
+	      id: 'moreLi',
+	      className: 'moreLi'
+	    });
+	    
+	    itemList.appendChild(li);
+	    
+	    var div = $create('div', {
+	      id: 'moreDiv'
+      });
+	    
+      li.appendChild(div);
+      
+//      var behance = $create('a', {
+//          className: 'item-name',
+//          href: 'https://www.behance.net/lzlzh',
+//          target: '_blank'
+//        });
+      var behance = $create('p', {
+	      class: 'moreP'
+      });
+      var gitHub = $create('p', {
+	      class: 'moreP'
+      });
+      var linkedin = $create('p', {
+	      class: 'moreP'
+      });
+      behance.innerHTML = '<i class="fa fa-behance-square"></i> <b>UI/Graphic Designs:<br></b> <a href="https://www.behance.net/lzlzh" target="_blank">www.behance.net/lzlzh</a>';
+      gitHub.innerHTML = '<br><br><i class="fa fa-github"></i> <b>Git Repositories:<br></b> <a href="https://github.com/lzlzh" target="_blank">github.com/lzlzh</a>';
+      linkedin.innerHTML = '<br><br><i class="fa fa-linkedin-square"></i> <b>Linkedin Profile:<br></b> <a href="https://www.linkedin.com/in/zhehangli" target="_blank">www.linkedin.com/in/zhehangli</a>';
+      div.appendChild(behance);
+      div.appendChild(gitHub);
+      div.appendChild(linkedin);    
+	  }
+  
+  
+  
   // -------------------------------------
   // Create item list
   // -------------------------------------

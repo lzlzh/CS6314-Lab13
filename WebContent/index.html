@@ -13,8 +13,8 @@
   <header class="top-header">
     <nav class="top-nav">
       <a href="#">Home</a>
-      <a href="#">Contact</a>
-      <a href="#">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#" id="how-btn">About</a>
     </nav>
     <span id="welcome-msg"></span>
     <a id="logout-link" href="logout">Logout</a>
@@ -61,11 +61,11 @@
         </div>
         <nav class="main-nav">
           <a href="#" id="nearby-btn" class="main-nav-btn active">
-            <i class="fa fa-map-marker"></i><b>Nearby</b>
+            <i class="fa fa-map-marker"></i><b>Detect Nearby</b>
             <span>Result based on your location (within 10 mi). Event data is powered by <b>TicketMaster API</b>.</span>
           </a>
           <a href="#" id="fav-btn" class="main-nav-btn">
-            <i class="fa fa-heart"></i><b>Your Favorites</b>
+            <i class="fa fa-heart"></i><b>My Favorites</b>
             <span>Favorite something before it gets here!  (click on the <i class="fa fa-heart-o"></i>)</span>
           </a>
           <a href="#" id="recommend-btn" class="main-nav-btn">
@@ -74,11 +74,12 @@
           </a>
           <a href="#" id="how-btn" class="main-nav-btn">
             <i class="fa fa-cogs"></i><b>How It Works!</b>
+            <span>More in the the little story of this mini app. User Manual <b>v0.0001</b></span>
           </a>
           <a href="#" id="more-btn" class="main-nav-btn">
             <i class="fa fa-link"></i><b>More From Me!</b>
+            <span>Related works from the author.</span>
           </a>
-          
         </nav>
       </aside>
 
@@ -122,6 +123,7 @@
         <p>+1 (708) 488-7107</p>
       </li>
     </ul>
+    <div id="contact"></div>
   </footer>
   
   <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
